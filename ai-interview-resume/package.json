@@ -13,6 +13,7 @@
   "dependencies": {
     "@clerk/nextjs": "^6.19.2",
     "@google/generative-ai": "^0.24.1",
+    "@heroicons/react": "^2.2.0",
     "@neondatabase/serverless": "^1.0.0",
     "@radix-ui/react-dialog": "^1.1.13",
     "@radix-ui/react-slot": "^1.2.2",
@@ -24,6 +25,7 @@
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-webcam": "^7.2.0",
     "tailwind-merge": "^3.3.0",
     "uuid": "^11.1.0"
   },

@@ -61,7 +61,15 @@ https://ui.shadcn.com/docs/components/input
 
 npx shadcn@latest add input
 
+5
 
+https://ai.google.dev/
+
+npm install @google/generative-ai
+
+random id generator : npm install uuid
+
+npm i moment
 
 --------------------------------------------------
 
