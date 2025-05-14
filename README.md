@@ -51,6 +51,16 @@ npm run db:push  [db connection]
 see-------> npm run db:studio
 --------------------------------------------------
 
+5
+
+https://ui.shadcn.com/docs/components/dialog
+
+npx shadcn@latest add dialog
+
+https://ui.shadcn.com/docs/components/input
+
+npx shadcn@latest add input
+
 
 
 --------------------------------------------------
