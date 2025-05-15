@@ -72,7 +72,37 @@ random id generator : npm install uuid
 npm i moment
 
 --------------------------------------------------
+6 
 
 
+react webcam
+
+npm install react-webcam
+
+for recording answer usr the {{React Hook to transcripe microphone input into text}}
+
+link:
+
+https://www.npmjs.com/package/react-hook-speech-to-text
+
+npm i react-hook-speech-to-text
+
+
+7/8
+
+https://ui.shadcn.com/docs/components/sonner
+
+npx shadcn@latest add sonner
+
+
+npm run db:push
+
+npm run db:studio
+
+10
+
+https://ui.shadcn.com/docs/components/collapsible
+
+npx shadcn@latest add collapsible
 
 --------------------------------------------------
