@@ -6,6 +6,10 @@ import { eq } from 'drizzle-orm';
 import WebcamComponent from 'react-webcam';
 import { Button } from '@/components/ui/button';
 import { Webcam as WebcamIcon, Lightbulb } from 'lucide-react';
+import Link from "next/link";
+
+
+
 
 function Interview({ params }) {
   const [interviewData, setInterviewData] = useState();
@@ -16,6 +20,7 @@ function Interview({ params }) {
     GetInterviewDetails();
   }, []);
 
+
   const GetInterviewDetails = async () => {
     const result = await db
       .select()
@@ -24,6 +29,9 @@ function Interview({ params }) {
 
     setInterviewData(result[0]);
   };
+
+
+
 
   return (
     <div className="my-10 px-5 md:px-20">
@@ -79,13 +87,16 @@ function Interview({ params }) {
         </div>
       </div>
 
-      {/* Start Button */}
-      <div className="flex justify-center md:justify-end mt-10">
-        <Link href = {'/dashboard/interview/'+params.interviewId+'/start'}/>
+      
+    <div className="flex justify-center md:justify-end mt-10">
+      <Link href={'/dashboard/interview/'+params.interviewId+'/start'}>
         <Button className="px-6 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-lg">
           Start Interview
         </Button>
-      </div>
+      </Link>
+    </div>
+
+
     </div>
   );
 }

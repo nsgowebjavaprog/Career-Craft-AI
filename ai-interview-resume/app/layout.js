@@ -1,9 +1,7 @@
-"use client";
-import { useEffect, useState } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs"; // ✅ CORRECT IMPORT
-import { Inter } from "next/font/google"; // ✅ Ensure Inter is imported if used
+import { ClerkProvider } from "@clerk/nextjs";
+import { Inter } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const inter = Inter({ subsets: ["latin"] }); // Add this if Inter is missing
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -26,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>
+        <body className={`${inter.className} ${geistSans.variable} ${geistMono.variable}`}>
           {children}
         </body>
       </html>
