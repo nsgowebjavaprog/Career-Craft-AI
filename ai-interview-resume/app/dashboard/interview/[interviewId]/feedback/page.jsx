@@ -50,8 +50,15 @@ export default function FeedbackClient({ interviewId }) {
 
   return (
     <div className="p-10">
+
+   {feedbackList?.length == 0?
+    <h2 className="font-bold text-xl text-gray-500">No Interview Record Found</h2>  
+    :
+    <>  
       <h2 className="text-3xl font-bold text-green-500">Congrats</h2>
       <h2 className="font-bold text-2xl">Here is your Interview Feedback</h2>
+          
+
       <h2 className="text-primary text-lg my-3">
         Interview Rating: <strong>8/10</strong>
       </h2>
@@ -87,6 +94,8 @@ export default function FeedbackClient({ interviewId }) {
           </CollapsibleContent>
         </Collapsible>
       ))}
+
+    </>}
 
       <Button onClick={() => router.push("/dashboard")}>GO BACK / HOME</Button>
     </div>
