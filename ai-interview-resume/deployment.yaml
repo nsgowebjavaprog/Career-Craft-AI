@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-html-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: simple-html
+  template:
+    metadata:
+      labels:
+        app: simple-html
+    spec:
+      containers:
+        - name: nginx
+          image: your-dockerhub-username/simple-html:latest
+          ports:
+            - containerPort: 80
