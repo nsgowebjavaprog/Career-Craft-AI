@@ -80,7 +80,7 @@ function AddNewInterview() {
   return (
     <div>
       <div
-        className="p-10 border rounded-lg bg-secondary hover:scale-105 hover:shadow-md cursor-pointer transition-all"
+        className="p-10 border rounded-lg bg-gray-200 hover:scale-105 hover:shadow-md cursor-pointer transition-all"
         onClick={() => setOpenDailog(true)}
       >
         <h2 className="font-bold text-lg text-center"> + Add New</h2>
@@ -89,16 +89,16 @@ function AddNewInterview() {
       <Dialog open={openDailog} onOpenChange={setOpenDailog}>
         <DialogContent className="max-w-2xl">
           <DialogHeader>
-            <DialogTitle className="text-2xl">
+            <DialogTitle className="text-2xl text-gray-900">
               Tell More About Job Interview
             </DialogTitle>
             <DialogDescription>
               <form onSubmit={onSubmit}>
                 <div>
-                  <h2>Add All Details</h2>
+                  <h2 className="text-gray-900">Add All Details</h2>
 
                   <div className="mt-7 my-3">
-                    <label>Job Role / Position</label>
+                    <label className="text-gray-900">Job Role / Position</label>
                     <Input
                       placeholder="e.g. ML Engineer"
                       required
@@ -109,7 +109,7 @@ function AddNewInterview() {
                   </div>
 
                   <div className="my-3">
-                    <label>Job Description / Language / Framework / etc..</label>
+                    <label className="text-gray-900">Job Description / Language / Framework / etc..</label>
                     <Textarea
                       placeholder="e.g. ML, AI, NLP, DP more"
                       required
@@ -118,7 +118,7 @@ function AddNewInterview() {
                   </div>
 
                   <div className="my-3">
-                    <label>Experience</label>
+                    <label className="text-gray-900">Experience</label>
                     <Input
                       placeholder="e.g. 2"
                       type="number"
@@ -142,7 +142,7 @@ function AddNewInterview() {
                   <Button type="submit" disabled={loading}>
                     {loading?
                     <>
-                    <LoaderCircle className="animate-spin"/> AI will Generating 
+                    <LoaderCircle className="animate-spin text-blue-200"/> AI will Generating 
                     </>:'Start Interview'
                     }
                     </Button>

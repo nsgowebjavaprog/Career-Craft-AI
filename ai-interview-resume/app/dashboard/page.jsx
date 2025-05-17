@@ -8,9 +8,9 @@ function Dashboard() {
   return (
     <div className='p-10'>
 
-      <h2 className='font-bold text-2xl'>DashBoard</h2>
+      <h2 className='font-bold text-gray-900 text-2xl'>User Dashboard</h2>
 
-      <h2 className='text-gray-500'>Create & Start Your AI Mock Interview</h2>
+      <h2 className='text-gray-700'>Create & Start your AI Mock Interview with CareerCraft AI</h2>
 
       <div className='grid grid-cols-1 md:grid-cols-3 my-5'>
         <AddNewInterview/>

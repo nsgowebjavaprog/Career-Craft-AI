@@ -35,7 +35,7 @@ function Interview({ params }) {
 
   return (
     <div className="my-10 px-5 md:px-20">
-      <h2 className="font-bold text-3xl text-center mb-10">🎯 Let's Get Started</h2>
+      <h2 className="font-bold text-3xl text-center mb-10">Let's Get Started</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         
@@ -90,7 +90,7 @@ function Interview({ params }) {
       
     <div className="flex justify-center md:justify-end mt-10">
       <Link href={'/dashboard/interview/'+params.interviewId+'/start'}>
-        <Button className="px-6 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-lg">
+        <Button className="cursor-pointer px-6 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-lg">
           Start Interview
         </Button>
       </Link>

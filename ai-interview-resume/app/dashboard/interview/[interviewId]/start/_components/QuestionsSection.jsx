@@ -84,11 +84,11 @@ function QuestionsSection({ mockInterviewQuestion, activeQuestionIndex }) {
         {mockInterviewQuestion && mockInterviewQuestion.map((question, index) => (
           <h2
             key={index}
-            className={`p-2 bg-secondary rounded-full
+            className={`p-2 bg-blue-300 rounded-full
             text-xs md:text-sm text-center cursor-pointer
-            ${activeQuestionIndex === index ? 'bg-primary text-white' : ''}`}
+            ${activeQuestionIndex === index ? 'bg-blue-400 text-white' : ''}`}
           >
-            Question #{index + 1}
+            Question - {index + 1}
           </h2>
         ))}
       </div>
