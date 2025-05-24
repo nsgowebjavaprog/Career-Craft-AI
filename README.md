@@ -2,7 +2,7 @@
 hackvyuha hackathon project
 
 --------------------------------------------------
-1.
+1.setup
 
 npx create-next-app@latest
 
@@ -16,7 +16,8 @@ npx shadcn@latest init
 
 npx shadcn@latest add button
 --------------------------------------------------
-2.
+
+2.login
 
 npm install @clerk/nextjs
 
@@ -51,7 +52,7 @@ npm run db:push  [db connection]
 see-------> npm run db:studio
 --------------------------------------------------
 
-5
+5. DB
 
 https://ui.shadcn.com/docs/components/dialog
 
@@ -60,8 +61,6 @@ npx shadcn@latest add dialog
 https://ui.shadcn.com/docs/components/input
 
 npx shadcn@latest add input
-
-5
 
 https://ai.google.dev/
 
@@ -72,8 +71,7 @@ random id generator : npm install uuid
 npm i moment
 
 --------------------------------------------------
-6 
-
+6. intervew to AI
 
 react webcam
 
@@ -87,19 +85,20 @@ https://www.npmjs.com/package/react-hook-speech-to-text
 
 npm i react-hook-speech-to-text
 
+------------------------------------------------------------
 
-7/8
+7/8. drizzle [PostgraSQL] DB COnnection
 
 https://ui.shadcn.com/docs/components/sonner
 
 npx shadcn@latest add sonner
 
-
 npm run db:push
 
 npm run db:studio
+------------------------------------------------------------
 
-10
+10.Overall setup and Feedback
 
 https://ui.shadcn.com/docs/components/collapsible
 
