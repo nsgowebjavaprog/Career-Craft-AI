@@ -1,5 +1,5 @@
-# hackvyuha
-hackvyuha hackathon project
+# Career-Craft-AI
+Career-Craft-AI project
 
 --------------------------------------------------
 1.setup
@@ -28,7 +28,7 @@ add middleware.js
 --------------------------------------------------
 3. header
 
-
+Write / add it my own -- u u can 
 
 --------------------------------------------------
 4. backend
